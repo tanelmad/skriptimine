@@ -24,3 +24,13 @@ git remote add skriptimine https://github.com/tanelmad/git_kasutamine.txt
 * git remote kontroll
 git remote -v
 
+põhikasutamine:
+
+* pane fail jälgimisele:
+git add git_kasutamine.txt
+
+* lisa kirjelduse muudatuse kohta
+git commit -m "lühikirjelduse lause"
+
+* lisa kaugrepositoorium
+git push -uf skriptimine master
