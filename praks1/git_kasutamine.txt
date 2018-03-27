@@ -1,0 +1,17 @@
+* root kasutajana:
+installeerisin käsuga - apt-get install git
+* tavakasutajana (tanelm):
+esmakordselt:
+1. seadista - määrasin kasutajanime, emaili ja editor
+* git config --global user.name "Tanel Madisson"
+* git config --global user.email tanel.madisson@khk.ee  
+* git config --global core.editor nano
+
+2. lõin kausta, kus hakkan skriptima:
+* mkdir skriptimine
+
+3. sisenesin antud kausta:
+* cd skriptimine
+
+4. tekitasin lokaalse repositooriumi git süsteemi jaoks antud kaustas:
+* git init
