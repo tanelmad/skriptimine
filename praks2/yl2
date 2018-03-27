@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# saavutused
+#
+echo -n "Minu nimi on Tanel Madisson. " # väljasta ilma reavahetuseta Minu nimi
+echo -n "Ma õpin IS117 õppegrupis. " # väljasta enda õppegrupp
+echo -n "Mulle meeldib see aine, sest see on uus asi minu jaoks. " # väljasta enda mõtted seoses ainega
+echo -n "Praegu olen rahul sellega mida selles aines tehakse. " # väljasta enda mulje või arvamus seoses ainega
+echo -n "." # väljasta . ja teostan reavahetuse
+#
+# skripti lõpp
