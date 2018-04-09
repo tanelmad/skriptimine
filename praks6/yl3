@@ -1,0 +1,13 @@
+# !/bin/bash
+if [ $# -ne 1 ]
+then echo "Kasutajate seletus:"
+	echo "$0 täisarv"
+else
+	if [ $(($1 % 2)) -eq 0 ] # kui arv jagub täpselt kahega(st. on paarisarv), on jääl 0
+	then echo "Antud arv on paaris."
+	else echo "Antud arv on paaritu."
+	fi
+fi
+#
+# skripti lõpp
+
