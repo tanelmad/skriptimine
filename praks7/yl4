@@ -1,0 +1,34 @@
+# !/bin/bash
+#
+kell=`date | cut -c12-13`
+#
+if test $kell -ge 6 -a $kell -lt 12
+then 
+	echo "Tere hommikust"
+#
+elif test $kell -ge 12 -a $kell -lt 18
+then 
+	echo "Tere päevast"
+#
+elif test $kell -ge 18 -a $kell -lt 22
+then 
+	tervitus="Tere õhtust"
+#
+elif test $kell -ge 22 -a $kell -lt 24
+then
+	tervitus="Head ööd"
+#
+elif test $kell -ge 1 -a $kell -lt 6
+then 
+	tervitus="Head ööd"
+else
+	tervitus="Vigane sisend"
+fi
+echo
+echo -n "$tervitus"
+echo -n `who am i | cut -f1 -d " "`
+#
+echo "!"
+#
+#skripti lõpp
+
