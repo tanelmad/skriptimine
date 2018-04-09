@@ -1,0 +1,16 @@
+# !/bin/bash
+#
+echo -n "Sisesta külg a: "
+read a
+echo -n "Sisesta külg b: "
+read b
+echo -n "Sisesta külg c: "
+read c
+#
+p=`echo "scale=2; ($a+$b+$c) /2" | bc -l`
+s=`echo "scale=2; ($p*($p-a)*($p-b)*($p-$c))" | bc -l`
+echo "Kolmnurga pindala on: "
+echo $s
+#
+# skripti lõpp
+
