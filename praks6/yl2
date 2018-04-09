@@ -1,0 +1,17 @@
+# !/bin/bash
+#
+echo "Reisjate arv grupid: "
+read reisjad
+echo "Kohtade arv bussis: "
+read kohti
+#
+taidetud=$(($reisjad / $kohti))
+if (($reisjad % $kohti > 0))
+then taidetud=$(($taidetud + 1))
+else :
+fi
+#maha=`expr $reisjad - $taidetud \* $kohti`
+#echo "Täidetud busse on $taidetud. Maha jääb $maha inimest."
+echo "Kokku on vaja $taidetud bussi."
+#
+# skripti lõpp
