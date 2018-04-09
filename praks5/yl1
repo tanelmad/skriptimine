@@ -1,0 +1,20 @@
+# !/bin/bash
+#
+echo -n "Sisesta esimese kaateti väärtus: "
+read esimene_kaatet
+echo -n "Sisesta teise kaateti väärtus: "
+read teine_kaatet
+#
+hypotenuus=`expr $esimene_kaatet \* $esimene_kaatet + $teine_kaatet \* $teine_kaatet`
+echo '
+	+
+	|\
+	| \ C
+	|  \
+      A	|   \
+	|    \
+	_______
+	   B   '
+echo sqrt "($hypotenuus)" | bc
+#
+# skripti lõpp
