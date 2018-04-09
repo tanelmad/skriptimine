@@ -1,11 +1,12 @@
-#!/bin/bash
+#! /bin/bash
 #
-# saavutused
+# kasutajate nimikiri kujul Perenimi, Eesnimi
 #
-echo -n "Minu nimi on Tanel Madisson. " # väljasta ilma reavahetuseta Minu nimi
-echo -n "Ma õpin IS117 õppegrupis. " # väljasta enda õppegrupp
-echo -n "Mulle meeldib see aine, sest see on uus asi minu jaoks. " # väljasta enda mõtted seoses ainega
-echo -n "Praegu olen rahul sellega mida selles aines tehakse. " # väljasta enda mulje või arvamus seoses ainega
-echo -n "." # väljasta . ja teostan reavahetuse
+# skripti algus
+#
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi # lõikame perenimi - see on 2. element peale punkti ja salvestame faili
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi # lõikame eesnime - see on 1. element enne punkti ja salvestame faili
+paste -d"." perenimi eesnimi > nimed # kleebime need failid vastavas järjekorras kokku
+cat nimed | sort | uniq # sorteerime väljundi ja võtame korduvad elemendid välja
 #
 # skripti lõpp
