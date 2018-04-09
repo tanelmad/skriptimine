@@ -1,0 +1,25 @@
+# !/bin/bash
+# numbrite liitmine
+# V1
+#
+echo -n "Sisesta suvaline täisarv: "
+read numbrid
+# alustame kohe ka väljastust
+echo -n "Numbrite $numbrid summa on "
+# kui numbrid on negatiivsed - muudame positiivseks
+if [ $numbrid -lt 0 ]; then
+	numbrid=$(($numbrid * -1))
+fi
+# arvutame summa
+summa=0
+while [ $numbrid -gt 0 ]
+do
+	arv=$(($numbrid % 10))
+	numbrid=$(($numbrid / 10))
+	summa=$(($summa + $arv))
+done
+# väljastame
+echo $summa
+#
+# skripti lõpp
+
