@@ -1,14 +1,14 @@
 # !/bin/bash
 #
 #
-for (( i=1; 1<=5; i++))
+for (( i = 1; i <= 5; i++ ))
 do
-	for (( j=1; j<=5; j++))
+	for (( j = 1; j <= 5; j++ ))
 	do
 	
-echo -n "* "
+echo -n "$i "
 done
-echo"" #uus rida
+echo "" #uus rida
 done
 #
 # skripti lõpp
