@@ -1,0 +1,6 @@
+# !/bin/bash
+#
+# otsimise skript
+find /var -iname *.log -exec wc -l {} + 2>/dev/null | sort -rn
+#
+# skripti lõpp
